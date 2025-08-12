@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
-import '../home/JobSeeker/job_seeker_home.dart.dart';
+import '../home/JobSeeker/main/screens/job_seeker_home.dart.dart';
 
 
 class OtpScreen extends StatefulWidget {

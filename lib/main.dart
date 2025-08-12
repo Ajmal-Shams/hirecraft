@@ -20,8 +20,8 @@ class HireCraftAI extends StatelessWidget {
       theme: ThemeData(primaryColor: Colors.red, fontFamily: 'Poppins'),
       initialRoute: '/',
       routes: {
-        '/': (context) => const SplashScreen(),
-        '/onboarding': (context) => const OnboardingScreen(),
+      
+        '/': (context) => const OnboardingScreen(),
         '/login': (context) => const LoginScreen(),
         '/signup': (context) => const SignupScreen(),
         '/otp': (context) => const OtpScreen(),

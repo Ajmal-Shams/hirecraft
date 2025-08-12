@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
+import '../home/JobSeeker/main/screens/job_seeker_home.dart.dart';
 import 'otp_screen.dart';
 import 'signup_screen.dart';
 
@@ -72,8 +73,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(height: 30),
-
-              
 
                   // Role Selection Dropdown (Now Uses _buildInputDecoration)
                   DropdownButtonFormField<String>(
@@ -189,6 +188,36 @@ class _LoginScreenState extends State<LoginScreen> {
                           const SizedBox(width: 8),
                           const Icon(Icons.arrow_forward, color: Colors.white),
                         ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    height: 50,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:
+                            Colors.black, // Black button for testing
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => JobSeekerHomeScreen(),
+                          ), // ✅ Navigates to Home Screen
+                        );
+                      },
+                      child: Text(
+                        "Test Home Screen",
+                        style: GoogleFonts.poppins(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
